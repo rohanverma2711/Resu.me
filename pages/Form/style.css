@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    padding-top: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    font-size: 1.2em;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    margin-bottom: 5px;
+}
+
+fieldset {
+    margin: 20px 0px;
+}
+
+/* Personal Details */
+
+.personal-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 20px 30px;
+}
+
+.fname {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.lname {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.email {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.phone {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.bday {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.address {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+/* About */
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding: 10px 10px;
+}
+
+#about {
+    border: 0px;
+    width: 100%;
+    height: 95%;
+    padding: 10px;
+}
+
+#about:focus {
+    outline: none;
+}
+
+/* Education */
+
+.education {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 20px 30px;
+}
+
+.school {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.degree {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.major {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.gpa {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.joining {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.completion {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+/* Skills */
+
+.tags-container {
+    border: 1px solid black;
+    padding: 2px 2.5px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.tag {
+    background-color: #ddd;
+    font-size: 85%;
+    cursor: pointer;
+    padding: 5px 2px;
+    margin: 5px 2px;
+    border: 1px solid #CCC;
+    display: block;
+}
+
+.tag:hover {
+    color: white;
+    background-color: #3af;
+}
+
+.close {
+    display: flex;
+    align-items: center;
+}
+
+.close:hover {
+    color: red;
+    transform: scale(1.2);
+}
+
+.tag-input {
+    border: 0px;
+    outline: 0px;
+}
+
+
+/* Experience */
+
+.experience {
+    display: grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 20px 30px;
+}
+
+.company {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.position {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.moreInfo {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.joinDate {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.leaveDate {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+/* Social */
+
+.social {
+    display: flex;
+    padding: 20px 30px;
+}
+
+.github,
+.linkedin,
+.codechef,
+.codeforces {
+    margin: 30px;
+}
+
+/* Button */
+
+.submit {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 50px;
+}
+
+#submit {
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    width: 20%;
+    background-color: #0893E6;
+    color: white;
+    cursor: pointer;
+    border: 0px;
+}
+
+#submit:hover {
+    background-color: #0B7AC4;
+    color: white;
+}
+
+/* Navbar */
+
+.image {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 90px;
+}
+
+#navbar img {
+    width: auto;
+    height: 100%;
+}
+
+ul#navbar li {
+    float: right;
+}
+
+ul#navbar li a {
+    display: block;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+
+ul#navbar li a:hover {
+    background-color: #ef233c;
+    color: white;
+}
+
+.icon {
+    width: 30px;
+}

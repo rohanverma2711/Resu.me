@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link type="text/css" rel="stylesheet" href="./style.css" />
+  <link rel="icon" href="logo.ico">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
+
+
+
+
+  <title>Fill Information</title>
+</head>
+
+<body>
+
+  <header>
+    <ul id="navbar">
+      <a href="../../index.html"><img src="../../assets/images/logo.jpeg" /></a>
+      <li><a href="../../pages/about us/abus.html">About Us</a></li>
+      <li><a href="../../pages/templates/templates.html">Templates</a></li>
+      <li><a href="https://github.com/insane-banda">Social</a></li>
+    </ul>
+  </header>
+
+  <div class="container">
+    <form>
+
+      <fieldset class="personal-details">
+        <legend>Personal Details</legend>
+        <div class="fname">
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname">
+        </div>
+        <div class="lname">
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname">
+        </div>
+        <div class="bday">
+          <label for="birthday">Birthday:</label>
+          <input type="date">
+        </div>
+        <div class="email">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <div class="phone">
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+        <!-- <div class="picture">
+          <label for=" picture">Image</label>
+          <input type="image">
+        </div> -->
+        <div class="address">
+          <label for="address">Address:</label>
+          <textarea id="address" name="address"></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset class="about">
+        <legend>About</legend>
+        <textarea id="about" name="about"></textarea>
+      </fieldset>
+
+      <fieldset class="education">
+        <legend>Education</legend>
+        <div class="school">
+          <label for="school">School:</label>
+          <input type="text" id="school" name="school">
+        </div>
+        <div class="degree">
+          <label for="degree">Degree:</label>
+          <input type="text" id="degree" name="degree">
+        </div>
+        <div class="major">
+          <label for="major">Major:</label>
+          <input type="text" id="major" name="major">
+        </div>
+        <div class="gpa">
+          <label for="gpa">GPA:</label>
+          <input type="text" id="gpa" name="gpa">
+        </div>
+        <div class="joining">
+          <label for="joining">Year of joining:</label>
+          <input type="date" id="joining" name="joining">
+        </div>
+        <div class="completion">
+          <label for="completion">Year of completion:</label>
+          <input type="date" id="completion" name="completion">
+        </div>
+      </fieldset>
+
+      <!-- <fieldset class="skills">
+        <legend>Skills</legend>
+        <div class="tags-container" data-name="softSkills-input">
+          <div class="tag">
+            <span>HTML</span>
+            <span class="close">
+              <i class="material-icons">
+                close
+              </i>
+            </span>
+          </div>
+          <div class="tag">
+            <span>CSS</span>
+            <span class="close">
+              <i class="material-icons">
+                close
+              </i>
+            </span>
+          </div>
+          <div class="tag">
+            <span>JAVASCRIPT</span>
+            <span class="close">
+              <i class="material-icons">
+                close
+              </i>
+            </span>
+          </div>
+          <input type="text" class="tag-input">
+        </div>
+      </fieldset> -->
+
+      <fieldset class="experience">
+        <legend>Experience</legend>
+        <div class="company">
+          <label for=" company">Company:</label>
+          <input type="text" id="company" name="company">
+        </div>
+        <div class="position">
+          <label for="position">Position:</label>
+          <input type="text" id="position" name="position">
+        </div>
+        <div class="moreInfo">
+          <label for="moreInfo">More Info:</label>
+          <input type="text" id="moreInfo" name="moreInfo">
+        </div>
+        <div class="joinDate">
+          <label for="joinDate">From:</label>
+          <input type="date" id="joinDate" name="joinDate">
+        </div>
+        <div class="leaveDate">
+          <label for="leaveDate">To:</label>
+          <input type="date" id="leaveDate" name="leaveDate">
+        </div>
+      </fieldset>
+
+      <fieldset class="social">
+        <legend>Social</legend>
+        <div class="github">
+          <label for="github">Github</label>
+          <input type="text" id="github" name="github">
+        </div>
+        <div class="linkedin">
+          <label for="linkedin">Linkedin</label>
+          <input type="text" id="linkedin" name="linkedin">
+        </div>
+        <div class="codechef">
+          <label for="codechef">Codechef</label>
+          <input type="text" id="codechef" name="codechef">
+        </div>
+        <div class="codeforces">
+          <label for="codeforces">Codeforces</label>
+          <input type="text" id="codeforces" name="codeforces">
+        </div>
+      </fieldset>
+    </form>
+  
+    <div class="submit">
+      <button type="submit" id="submit">Submit</button>
+    </div>
+
+
+  </div>
+</body>
+<script>
+  $(document).ready(function () {
+    // Get value on button click and show alert
+    $("#submit").click(function () {
+      var fname = $.trim($("#fname").val());
+      var lname = $.trim($("#lname").val());
+      var email = $.trim($("#email").val());
+
+      var address = $.trim($("#address").val());
+      var phone = $.trim($("#phone").val());
+      // var  = $.trim($("#lname").val());
+
+      window.jsPDF = window.jspdf.jsPDF
+      var doc = new jsPDF();
+
+
+      doc.setFontSize(30);
+      doc.text("RESUME", 75, 20);
+
+      doc.setFontSize(16);
+      doc.text(fname, 20, 35);
+      doc.text(lname, 45, 35);
+      doc.text(email, 20, 40);
+      doc.text(address, 20, 45);
+      doc.text(phone, 20, 50)
+      doc.setFontSize(20);
+     
+
+
+     
+
+
+
+
+      doc.setLineWidth(1);
+      doc.line(20, 55, 180, 55);
+
+      doc.text("About", 20,65 );
+
+      doc.setFontSize(16);
+
+
+
+
+
+      doc.save("file.pdf");
+
+    });
+  });
+</script>
+
+
+
+</html>
