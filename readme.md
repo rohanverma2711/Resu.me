@@ -53,8 +53,8 @@ Build their own resumes.
 ## Team Members
 
 - [Piyush Keshari (191500538)](https://github.com/insane-banda)
-- [Priyanshu Vishwakarma (191500611)](https://github.com/CodePredator01)
 - [Rohan Kumar (191500669)](https://github.com/rohanverma2711)
+- [Priyanshu Vishwakarma (191500611)](https://github.com/CodePredator01)
 - [Aditya Srivastava (191500063)](https://github.com/aditya240201)
 
 <br>
