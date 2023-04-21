@@ -2,7 +2,7 @@
 
 <br>
 
-## [RESU.ME](https://insane-banda.github.io/resu.me/)
+## [RESU.ME](https://rohanverma2711.github.io/Resu.me/)
 ## An open source resume generation tool
 
 <br>
@@ -18,7 +18,7 @@ Needed in a resume.
 <br>
 
 # Objective
-The main objective of [RESU.ME](https://insane-banda.github.io/resu.me/) is to allow our users to make their perfect resume with all the best templates available, all for free. You won’t have to login or make any sort of payment to access our services.
+The main objective of [RESU.ME](https://rohanverma2711.github.io/Resu.me/) is to allow our users to make their perfect resume with all the best templates available, all for free. You won’t have to login or make any sort of payment to access our services.
 
 <br>
 
@@ -51,11 +51,10 @@ Build their own resumes.
 <br>
 
 ## Team Members
-
-- [Piyush Keshari (191500538)](https://github.com/insane-banda)
 - [Rohan Kumar (191500669)](https://github.com/rohanverma2711)
-- [Priyanshu Vishwakarma (191500611)](https://github.com/CodePredator01)
-- [Aditya Srivastava (191500063)](https://github.com/aditya240201)
+- [Piyush Keshari (191500538)](https://github.com/insane-banda)
+
+
 
 <br>
 
