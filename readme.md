@@ -9,7 +9,7 @@
 
 # Introduction
 
-[RESU.ME](https://insane-banda.github.io/resu.me/) is a resume-building service that consists of a wide array of templates for freshers to build
+[RESU.ME](https://rohanverma2711.github.io/Resu.me/) is a resume-building service that consists of a wide array of templates for freshers to build
 their resumes as they take their first steps towards their careers. With plenty of templates to choose
 from, you can make your resumes according to your needs, that too for free.
 You just have to open our site, select your desired template, and enter all the details that are
@@ -59,11 +59,9 @@ Build their own resumes.
 <br>
 
 # Team contribution
-- In this project we are working as a team of 4 person
+- In this project we are working as a team of 2 persons
 - <font color="crimson">Piyush</font> will be overseeing the UI and integrity(backend) of the site.
 - The main form for the resume is taken care by <font color="crimson">Rohan</font>.
-- <font color="crimson">Priyanshu</font> will have the responsibility to make the page responsive.
-- <font color="crimson">Aditya</font> will deal with the wireframe, data and content of the website
 - The rest of the work will be divided among the team equally.
 - We will take probably one and half month to complete this project with full
 analysis and testing.
